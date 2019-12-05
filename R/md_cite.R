@@ -71,7 +71,7 @@ paste_citation_keys <- function(keys, in_paren = FALSE) {
     paste0("[@", keys, "]")
   } else {
     if(n_keys == 2) {
-      keys <- paste(keys, collapse = " and @")
+      keys <- paste(keys, collapse = " et @")
     } else if(n_keys > 2) {
       keys <- paste(
         paste(keys[-n_keys], collapse = ", @")
